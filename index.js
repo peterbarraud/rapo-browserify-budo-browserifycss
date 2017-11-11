@@ -1,8 +1,8 @@
 require('./src/styles/main.css');
 
 require("domready");
-require("mini.css");
 
+// require("mini.css");
 // require("dead-simple-grid-npm");
 // require("flexboxgrid");
 // require("normalize.css");

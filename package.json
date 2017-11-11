@@ -4,7 +4,7 @@
   "description": "A rapid prototyping project for Browerify+Budo using Browserify-CSS to manage external CSS libs",
   "main": "entry.js",
   "scripts": {
-    "start": "budo index.js --live --open -- -g [browserify-css --minify=true --output index.css]",
+    "start": "budo index.js --live --open -- -t [browserify-css --minify=true --output index.css]",
     "buildhtml": "html-dist --config html-dist.config.js --input index.html",
     "build": "node scripts/build"
   },
@@ -29,7 +29,6 @@
   "devDependencies": {
     "browserify-css": "^0.12.1",
     "budo": "^10.0.4",
-    "html-dist": "^0.2.0",
     "html-minifier": "^3.5.6",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.2",
@@ -37,12 +36,6 @@
     "uglifyify": "^4.0.4"
   },
   "dependencies": {
-    "dead-simple-grid-npm": "^1.0.0",
-    "domready": "^1.0.8",
-    "flexboxgrid": "^6.3.1",
-    "mini.css": "^2.3.7",
-    "normalize.css": "^7.0.0",
-    "pui-css-buttons": "^8.3.3",
-    "purecss": "^1.0.0"
+    "domready": "^1.0.8"
   }
 }
