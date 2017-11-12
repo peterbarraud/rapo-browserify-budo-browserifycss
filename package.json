@@ -5,7 +5,6 @@
   "main": "entry.js",
   "scripts": {
     "start": "budo index.js --live --open -- -t [browserify-css --minify=true --output index.css]",
-    "buildhtml": "html-dist --config html-dist.config.js --input index.html",
     "build": "node scripts/build"
   },
   "repository": {
@@ -27,7 +26,7 @@
   },
   "homepage": "https://github.com/peterbarraud/rapo-browserify-budo-browserifycss#readme",
   "devDependencies": {
-    "browserify-css": "^0.12.1",
+    "browserify-css": "^0.13.1",
     "budo": "^10.0.4",
     "html-minifier": "^3.5.6",
     "mkdirp": "^0.5.1",
