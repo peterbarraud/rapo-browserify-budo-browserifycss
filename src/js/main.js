@@ -9,11 +9,6 @@ require('domready')(function () {
 });
 
 // and if you want to use jquery instead of plain-old vanilla JS
-// npm install jQuery --save and then uncomment the following lines
-
-// const $ = require('jquery');
-// window.jQuery = $;
-
 // $(function(){
 //   $( "#sayhello" ).click(function() {
 //     $('#showhello').text('Allo, allo');
