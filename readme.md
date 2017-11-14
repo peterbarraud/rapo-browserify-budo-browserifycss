@@ -7,11 +7,11 @@ Besides browserify and budo, we're going to include the browserify-css tranform 
 * **./src**: This holds your JS and CSS source files. These are also referenced in `index.js`
 * **package.json**: This has a `start` script that runs the localhost. If you're including external CSS libs with *only* a require statement, you're probably going to have to change the browserify-css -t flag to -g (global). See the `index.js` file that has commented out `require` statements for samples. If a lib that you include does not work with a simple require statement, you might have to require upto the `.css` reference in given in the lib's `package.json`
 
-## Extras
-* **External libs with only `require`**:
-* **jQuery**: 
-* **bootstrap**:
+## Browserify + Bulma (and other external CSS libs)
 
+## Browserify + jQuery
+
+## Browserify + Bootstrap
 
 ## Get going
 1. Clone this repo
