@@ -4,7 +4,7 @@ require('./src/styles/main.css');
 require("domready");
 
 // to use jQuery comment out the following line:
-window.$ = window.jQuery = require('jquery');
+// window.$ = window.jQuery = require('jquery');
 // also check the ./src/js/main.js for changes you need to make there
 
 // CSS Libs that are included with a simple require statement:
