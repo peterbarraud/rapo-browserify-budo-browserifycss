@@ -4,7 +4,7 @@
   "description": "A rapid prototyping project for Browerify+Budo using Browserify-CSS to manage external CSS libs",
   "main": "entry.js",
   "scripts": {
-    "start": "budo index.js --live --open --port 9876 -- -t [browserify-css --minify=true --output index.css]",
+    "start": "budo index.js --live --open --port 9876 -- -g [browserify-css]",
     "build": "node scripts/build"
   },
   "repository": {
