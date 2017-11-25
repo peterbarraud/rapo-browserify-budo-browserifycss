@@ -29,20 +29,6 @@ var buildCSS = function(){
     console.log('Done: Building index.css');
 }
 
-var buildHTML = function(){
-    fs.readFile('index.html', 'utf8', function(err, data){
-        if (err) {
-            return console.log(err);
-          }
-          var minify = require('html-minifier').minify;
-          var result = minify(data, {
-          removeAttributeQuotes: true
-          });
-          console.log(result);
-          fs.writeFileSync('build/index.html', result);
-      });
-};
-
 console.log("using rimraf just to first we clean out the entire build dir");
 require('rimraf')('build', function(){
     console.log("re-make the build folder from scratch");
@@ -54,8 +40,6 @@ require('rimraf')('build', function(){
             buildJS();
             console.log("build the index.css");            
             buildCSS();
-            console.log('build the index.html');
-            buildHTML();
         }
     });  
 });

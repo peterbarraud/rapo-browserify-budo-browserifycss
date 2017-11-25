@@ -4,8 +4,9 @@
   "description": "A rapid prototyping project for Browerify+Budo using Browserify-CSS to manage external CSS libs",
   "main": "entry.js",
   "scripts": {
-    "start": "budo index.js --live --open --port 9876 -- -t [browserify-css]",
-    "build": "node scripts/build"
+    "start": "budo index.js --live --open --port 9876 -- -t browserify-css",
+    "build": "node scripts/build && html-dist --config ./scripts/html-dist.config.js --input index.html",
+    "testbuild": "budo -d ./build --open"
   },
   "repository": {
     "type": "git",
@@ -28,10 +29,9 @@
   "devDependencies": {
     "browserify-css": "^0.13.1",
     "budo": "^10.0.4",
-    "html-minifier": "^3.5.6",
+    "html-dist": "^0.3.2",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.2",
-    "uglifycss": "0.0.27",
     "uglifyify": "^4.0.4"
   },
   "dependencies": {
