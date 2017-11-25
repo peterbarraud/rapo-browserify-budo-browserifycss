@@ -17,8 +17,8 @@ That's it.
 
 ## Building the project for deployment
 This is split into two parts
-* `build.js`: That builds the `JS` and `CSS` outputs
-* `html-dist.config`: That using [html-dist](https://www.npmjs.com/package/html-dist) to inject the CSS into the HTML
+* `build.js`: Builds the `JS` and `CSS` outputs
+* `html-dist.config`: Uses [html-dist](https://www.npmjs.com/package/html-dist) to inject the CSS into the HTML
 
 Then generate build:
 ```
