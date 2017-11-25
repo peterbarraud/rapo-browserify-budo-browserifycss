@@ -16,4 +16,17 @@ Besides browserify and budo, we're going to include the browserify-css tranform 
 That's it.
 
 ## Building the project for deployment
--- STILL TODO --
+This is split into two parts
+* `build.js`: That builds the `JS` and `CSS` outputs
+* `html-dist.config`: That using [html-dist](https://www.npmjs.com/package/html-dist) to inject the CSS into the HTML
+
+Then generate build:
+```
+npm run build
+```
+### Testing the build
+If you want to check the build - Just to make sure:
+```
+npm run testbuild
+```
+This runs `budo` on the build
